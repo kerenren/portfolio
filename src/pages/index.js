@@ -6,12 +6,14 @@ import Image from "../components/Image.jsx"
 import SEO from "../components/seo"
 import Hero from "../components/Hero.jsx"
 import About from "../components/About.jsx"
+import Contact from "../components/Contact.jsx"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero />
     <About />
+    <Contact />
   </Layout>
 )
 
