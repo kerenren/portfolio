@@ -1,0 +1,125 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.3s ease-in-out;
+}
+.text-color-main {
+  background-image: linear-gradient(
+    to right bottom,
+    #7b263f,
+    #7e3851,
+    #804861,
+    #82586f,
+    #83677b
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-color-main :hover {
+  transform: translateX(2px);
+}
+
+.text-color-dark-coco {
+  color: #2e1114;
+}
+
+.text-color-dark-purple {
+  color: #501b1d;
+}
+
+.text-color-smoky-purple {
+  color: #64485c;
+}
+
+.text-color-light-purple {
+  color: #83677b;
+}
+
+.text-color-grey {
+  color: #adadad;
+}
+
+.bg-color-main {
+  background-color: #7b263f;
+}
+
+.bg-color-dark-coco {
+  background-color: #2e1114;
+}
+
+.bg-color-dark-purple {
+  background-color: #501b1d;
+}
+
+.bg-color-smoky-purple {
+  background-color: #64485c;
+}
+
+.bg-color-light-purple {
+  background-color: #83677b;
+}
+
+.bg-color-grey {
+  background-color: #adadad;
+}
+
+section {
+  padding: 5rem 0rem;
+}
+
+.section-title {
+  margin: 0px;
+  margin-bottom: 4.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .text-color-main {
+    background-image: none;
+    color: #7b263f;
+    -webkit-text-fill-color: #7b263f;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+}
