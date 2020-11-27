@@ -27,5 +27,14 @@ module.exports = {
         icon: `src/images/Kelly-icon.png`, 
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Montserrat`,
+        ],
+        display: 'swap'
+      }
+    },
   ],
 }
