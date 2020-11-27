@@ -24,7 +24,7 @@ const Image = () => {
       <Img
         fluid={data.file.childImageSharp.fluid}
         placeholderStyle={{ visibility: "hidden" }}
-        alt="Kelly's profile image"
+        alt="Profile picture"
       />
     </>
   )
