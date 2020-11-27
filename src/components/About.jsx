@@ -24,12 +24,12 @@ const About = () => {
     <section id="about" className={styles.about}>
       <Container>
         <Title title="About Me" />
-        <Row className={styles['about-wrapper']}>
-          <Col md={6} sm={12}>
+        <Row className={styles.aboutWrapper}>
+          <Col className={styles.wrapperImage} md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-                <div className={styles['wrapper-image']} style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                  <Image />
-                </div>
+              <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+                <Image />
+              </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
@@ -40,20 +40,20 @@ const About = () => {
               delay={1000}
               distance="30px"
             >
-              <div className={styles['wrapper-info']}>
-                <p className={styles['wrapper-info-text']}>
+              <div className={styles.wrapperInfo}>
+                <p className={styles.wrapperInfoText}>
                   After working in Google as a project lead I discovered my
                   passion for programming and went for an intensive full stack
                   bootcamp at Israel Tech Challenge (ITC) and completed a 3
                   months internship as a full stack developer.
                 </p>
-                <p className={styles['wrapper-info-text']}>
+                <p className={styles.wrapperInfoText}>
                   As a project lead I had to connect colleagues cross countries
                   and departments and had a chance to be involved in meaningful
                   projects from seed point to product launch and solve all the
                   problems all during the process.
                 </p>
-                <p className={styles['wrapper-info-text']}>
+                <p className={styles.wrapperInfoText}>
                   As a developer I wish to use my global experience and creative
                   thinking to give myself an added value in the industry.
                 </p>
