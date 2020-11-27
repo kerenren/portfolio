@@ -1,0 +1,47 @@
+.about {
+  color: white;
+  background-color: firebrick;
+  background-image: linear-gradient(
+    to right bottom,
+    #7b263f,
+    #7e3851,
+    #804861,
+    #82586f,
+    #83677b
+  );
+  height: 100%;
+  border-top: 0px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.wrapper-image {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-info {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper-info-text {
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+  .about {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}

@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import Title from "./Title.jsx"
 import Image from "./Image.jsx"
+import styles from "../styles/sections/about.module.css"
 
 const About = () => {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -20,17 +21,15 @@ const About = () => {
   }, [])
 
   return (
-    <section id="about">
+    <section id="about" className={styles.about}>
       <Container>
         <Title title="About Me" />
-        <Row className="about-wrapper">
+        <Row className={styles['about-wrapper']}>
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+                <div className={styles['wrapper-image']} style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
                   <Image />
                 </div>
-              </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
@@ -41,20 +40,20 @@ const About = () => {
               delay={1000}
               distance="30px"
             >
-              <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
+              <div className={styles['wrapper-info']}>
+                <p className={styles['wrapper-info-text']}>
                   After working in Google as a project lead I discovered my
                   passion for programming and went for an intensive full stack
                   bootcamp at Israel Tech Challenge (ITC) and completed a 3
                   months internship as a full stack developer.
                 </p>
-                <p className="about-wrapper__info-text">
+                <p className={styles['wrapper-info-text']}>
                   As a project lead I had to connect colleagues cross countries
                   and departments and had a chance to be involved in meaningful
                   projects from seed point to product launch and solve all the
                   problems all during the process.
                 </p>
-                <p className="about-wrapper__info-text">
+                <p className={styles['wrapper-info-text']}>
                   As a developer I wish to use my global experience and creative
                   thinking to give myself an added value in the industry.
                 </p>
@@ -63,7 +62,7 @@ const About = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="cta-btn cta-btn--resume"
+                    className="cta-btn cta-btn-resume"
                     href={"./"}
                   >
                     Resume
