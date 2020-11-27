@@ -4,6 +4,8 @@ import { Link } from "react-scroll"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 
+import styles from "../styles/sections/hero.module.css"
+
 const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -18,7 +20,7 @@ const Hero = () => {
     }
   }, [])
   return (
-    <section id="hero">
+    <section id="hero" className={`jumbotron  ${styles.herojumbotron}`} fluid>
       <Container>
         <Fade
           left={isDesktop}
@@ -27,21 +29,20 @@ const Hero = () => {
           delay={500}
           distance="30px"
         >
-          <h1>
+          <h1 className={styles.herotitle}>
             Hello!{" "}
             <span role="img" alt="waving hand emoji">
               {" "}
               👋{" "}
             </span>
-          </h1>
-          <p>My name is Kelly Ren </p>
-          <p>
-            I am a Web Developer with passion on building user friendly web site{" "}
+            My name is <span className="text-color-main">Kelly Ren</span>
+            <br />I am a Web Developer with passion on building user friendly
+            web site{" "}
             <span role="img" alt="a developer emoji">
               {" "}
               👩🏻‍💻{" "}
             </span>
-          </p>
+          </h1>
         </Fade>
         <Fade
           left={isDesktop}
@@ -50,7 +51,7 @@ const Hero = () => {
           delay={1000}
           distance="30px"
         >
-          <Button className="px-4 py-1 text-sm">
+          <Button className={`px-4 py-1 text-sm ${styles.cta}`}>
             <Link to="about" smooth duration={1000}>
               Know more
             </Link>

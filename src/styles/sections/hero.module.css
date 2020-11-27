@@ -1,0 +1,102 @@
+.herojumbotron {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background-color: transparent;
+  font-weight: 400;
+  color: #272341;
+  padding: 0rem 0.8rem;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.herotitle {
+  margin-bottom: 3.2rem;
+  text-align: left;
+}
+
+.cta {
+  display: flex;
+}
+
+.cta a {
+  font-size: 2.4rem;
+}
+
+/* Extra small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) {
+  #hero {
+    line-height: 1.5;
+  }
+  .herojumbotron {
+    padding: 0rem 0.8rem;
+  }
+  .herotitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .cta a {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #hero {
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .herojumbotron {
+    padding: 0rem 3rem;
+  }
+  .herotitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .cta a {
+    font-size: 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+  .herotitle {
+    line-height: 1.2;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .herojumbotron {
+    padding: 0rem 5.6rem;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .herotitle {
+    line-height: 1.2;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .herotitle {
+    line-height: 1.2;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  .herojumbotron {
+    padding: 0rem 5.6rem;
+  }
+}
