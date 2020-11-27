@@ -1,3 +1,7 @@
+button {
+  border: 1px solid #7b263f;
+}
+
 .herojumbotron {
   min-height: 100vh;
   height: 100vh;
@@ -25,11 +29,27 @@
   display: flex;
 }
 
-.cta a {
-  font-size: 2.4rem;
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: 2;  
+  transform-origin: 70% 70%;      
+  display: inline-block;
 }
 
-/* Extra small devices (landscape phones, 576px and up) */
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }  
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }  
+100% { transform: rotate( 0.0deg) }
+}
+
+
+/* Extra small devices (landscape phones, 320px and up) */
 @media (min-width: 320px) {
   #hero {
     line-height: 1.5;
@@ -38,8 +58,12 @@
     padding: 0rem 0.8rem;
   }
   .herotitle {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .cta {
+    justify-content: center;
   }
   .cta a {
     font-size: 1rem;
@@ -50,14 +74,12 @@
 @media (min-width: 576px) {
   #hero {
     line-height: 1.5;
-    font-weight: 500;
   }
   .herojumbotron {
     padding: 0rem 3rem;
   }
   .herotitle {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 2rem;
   }
   .cta a {
     font-size: 1rem;
@@ -66,13 +88,9 @@
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .cta {
-    justify-content: center;
-  }
   .herotitle {
     line-height: 1.2;
     font-size: 2.5rem;
-    text-align: center;
   }
   .herojumbotron {
     padding: 0rem 5.6rem;
@@ -81,22 +99,17 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .herotitle {
-    line-height: 1.2;
     font-size: 2.8rem;
-    font-weight: 700;
-    text-align: center;
+    text-align: left;
+  }
+  .cta {
+    justify-content: start;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .herotitle {
-    line-height: 1.2;
     font-size: 3rem;
-    font-weight: 700;
-    text-align: left;
-  }
-  .herojumbotron {
-    padding: 0rem 5.6rem;
   }
 }
