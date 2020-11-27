@@ -21,6 +21,7 @@
 }
 
 .wrapper-image {
+  align-self: center;
   display: flex;
   height: 100%;
   align-items: center;
@@ -35,10 +36,10 @@
 }
 
 .wrapper-info-text {
-    text-align: left;
+  text-align: left;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .about {
     height: 100%;
     -webkit-clip-path: none;
