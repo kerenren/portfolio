@@ -1,31 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import Layout from "../components/Layout.jsx"
-import Image from "../components/image"
+import Image from "../components/Image.jsx"
 import SEO from "../components/seo"
+import Hero from "../components/Hero.jsx"
+import About from "../components/About.jsx"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>
-      Hello!{" "}
-      <span role="img" alt="waving hand emoji">
-        {" "}
-        👋{" "}
-      </span>
-    </h1>
-    <p>My name is Kelly Ren </p>
-    <p>
-      I am a Web Developer with passion on building user friendly web site{" "}
-      <span role="img" alt="a developer emoji">
-        {" "}
-        👩🏻‍💻{" "}
-      </span>
-    </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    <Hero />
+    <About />
   </Layout>
 )
 
