@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade"
 import { Container, Row, Col } from "react-bootstrap"
 
 import Title from "./Title.jsx"
-import Image from "./Image.jsx"
+import ProfileImg from "./ProfileImg.jsx"
 import styles from "../styles/sections/about.module.css"
 
 const About = () => {
@@ -28,7 +28,7 @@ const About = () => {
           <Col className={styles.wrapperImage} md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                <Image />
+                <ProfileImg />
               </div>
             </Fade>
           </Col>
