@@ -20,7 +20,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn hvr-shutter-out-horizontal cta-btn-resume"
-              href="mailto:"
+              href="mailto:renkelei.kelly@gmail.com"
             >
               Let's talk
             </a>
