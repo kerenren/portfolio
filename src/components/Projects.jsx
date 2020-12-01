@@ -1,12 +1,14 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCode } from "@fortawesome/free-solid-svg-icons"
 import React, { useContext, useState, useEffect } from "react"
-import Fade from "react-reveal/Fade"
 import { Container, Row, Col } from "react-bootstrap"
+import Fade from "react-reveal/Fade"
 import Tilt from "react-tilt"
 
-import Title from "./Title.jsx"
-import ProjectImg from "./ProjectImg.jsx"
-import PortfolioContext from "../library/context"
 import styles from "../styles/sections/projects.module.css"
+import PortfolioContext from "../library/context"
+import ProjectImg from "./ProjectImg.jsx"
+import Title from "./Title.jsx"
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext)
@@ -59,10 +61,11 @@ const Projects = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn text-color-main hvr-bob "
                           href={repo}
                         >
                           Source Code
+                          <FontAwesomeIcon icon={faCode} className={styles.codeIcon}/>
                         </a>
                       )}
                     </div>
@@ -97,7 +100,7 @@ const Projects = () => {
                           easing: "cubic-bezier(.03,.98,.52,.99)",
                         }}
                       >
-                        <div data-tilt className="thumbnail rounded">
+                        <div data-tilt className="thumbnail">
                           <ProjectImg alt={title} filename={img} />
                         </div>
                       </Tilt>
