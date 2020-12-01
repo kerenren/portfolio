@@ -1,5 +1,5 @@
 button {
-  border: 0.0625rem solid #7b263f;
+  border: 1px solid #7b263f;
 }
 
 .herojumbotron {
@@ -7,11 +7,11 @@ button {
   height: 100vh;
   display: flex;
   align-items: center;
-  border-bottom: 0rem;
+  border-bottom: 0px;
   background-color: transparent;
   font-weight: 400;
   color: #272341;
-  padding: 0rem 0.8rem;
+  padding: 0px 12.8px;
   margin: 0;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ button {
 }
 
 .herotitle {
-  margin-bottom: 3.2rem;
+  margin-bottom: 51.2px;
   text-align: left;
 }
 
@@ -55,10 +55,10 @@ button {
     line-height: 1.5;
   }
   .herojumbotron {
-    padding: 0rem 0.8rem;
+    padding: 0px 12.8px;
   }
   .herotitle {
-    font-size: 1.8rem;
+    font-size: 28.8px;
     font-weight: 700;
     text-align: center;
   }
@@ -66,7 +66,7 @@ button {
     justify-content: center;
   }
   .cta a  {
-    font-size: 1.25rem;
+    font-size: 20px;
   }
 }
 
@@ -76,13 +76,13 @@ button {
     line-height: 1.5;
   }
   .herojumbotron {
-    padding: 0rem 3rem;
+    padding: 0px 48px;
   }
   .herotitle {
-    font-size: 2rem;
+    font-size: 32px;
   }
   .cta a  {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
@@ -90,16 +90,16 @@ button {
 @media (min-width: 768px) {
   .herotitle {
     line-height: 1.2;
-    font-size: 2.5rem;
+    font-size: 40px;
   }
   .herojumbotron {
-    padding: 0rem 5.6rem;
+    padding: 0px 89.6px;
   }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .herotitle {
-    font-size: 2.8rem;
+    font-size: 44.8px;
     text-align: left;
   }
   .cta {
@@ -110,6 +110,6 @@ button {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .herotitle {
-    font-size: 3rem;
+    font-size: 48px;
   }
 }

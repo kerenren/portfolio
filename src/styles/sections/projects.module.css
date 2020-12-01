@@ -1,5 +1,5 @@
 .projectWrapper {
-  margin-bottom: 15rem;
+  margin-bottom: 240px;
 }
 
 .projectWrapper .cta-btn {
@@ -7,7 +7,7 @@
 }
 
 .project-container {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .projectTitle {
@@ -33,7 +33,7 @@
 .cta-container {
   display: flex;
   flex-direction: row;
-  margin: 0.5rem 0;
+  margin: 8px 0;
 }
 
 .codeIcon {
@@ -58,11 +58,11 @@
 
 @media (max-width: 576px) {
   .projectWrapper {
-    margin-bottom: 0rem;
+    margin-bottom: 0px;
   }
 
   .row {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
   }
 
   .projectTitle {
@@ -72,8 +72,8 @@
 
   .projectWrapperText {
     font-size: 16px;
-    margin-top: 1rem ;
-    margin-bottom: 0.5rem;
+    margin-top: 16px ;
+    margin-bottom: 8px;
   }
 
   .codeIcon {
@@ -88,8 +88,8 @@
 
 @media (min-width: 576px) {
   .projectWrapperText {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   .projectWrapperImage {
