@@ -32,7 +32,7 @@ const Projects = () => {
           const { title, info, info2, url, repo, img, id } = project
 
           return (
-            <Row key={id}>
+            <Row key={id} className={styles.projectContainer}>
               <Col lg={4} sm={12}>
                 <Fade
                   left={isDesktop}
@@ -42,28 +42,30 @@ const Projects = () => {
                   distance="30px"
                 >
                   <div className={styles.projectWrapperText}>
-                    <h3>{title}</h3>
+                    <h3 className={styles.projectTitle}>{title}</h3>
                     <p>{info}</p>
                     <p>{info2}</p>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn-hero"
-                      href={url || "#!"}
-                    >
-                      See Live
-                    </a>
-
-                    {repo && (
+                    <div className={styles.ctaContainer}>
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-btn text-color-main"
-                        href={repo}
+                        className="cta-btn cta-btn-hero hvr-shutter-out-horizontal"
+                        href={url || "#!"}
                       >
-                        Source Code
+                        See Live
                       </a>
-                    )}
+
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repo}
+                        >
+                          Source Code
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </Fade>
               </Col>
