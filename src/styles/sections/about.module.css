@@ -1,18 +1,11 @@
 .about {
   color: white;
   background-color: firebrick;
-  background-image: linear-gradient(
-    to right bottom,
-    #7b263f,
-    #9b4a57,
-    #ba6d72,
-    #da918f,
-    #f9b6af
-  );
+  background-image: linear-gradient(135deg, #7b263f 0%, #f9b6af 100%);
   height: 100%;
-  border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  border-top: 0rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   padding-bottom: 10%;
 }
 
@@ -39,7 +32,7 @@
   text-align: left;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .about {
     height: 100%;
     -webkit-clip-path: none;

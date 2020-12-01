@@ -65,7 +65,10 @@ const Projects = () => {
                           href={repo}
                         >
                           Source Code
-                          <FontAwesomeIcon icon={faCode} className={styles.codeIcon}/>
+                          <FontAwesomeIcon
+                            icon={faCode}
+                            className={styles.codeIcon}
+                          />
                         </a>
                       )}
                     </div>
