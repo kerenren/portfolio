@@ -27,7 +27,7 @@ const About = () => {
         <Row className={styles.aboutWrapper}>
           <Col className={styles.wrapperImage} md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+              <div style={{ maxWidth: `300px`, marginBottom: `23.2px` }}>
                 <ProfileImg />
               </div>
             </Fade>
