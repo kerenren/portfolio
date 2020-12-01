@@ -296,6 +296,23 @@ section {
   animation-direction: normal, alternate;
 }
 
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(138, 136, 136, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px #f9b6af;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 @media (max-width: 576px) {
   .text-color-main {
     background-image: none;
