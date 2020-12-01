@@ -1,5 +1,5 @@
 button {
-  border: 1px solid #7b263f;
+  border: 0.0625rem solid #7b263f;
 }
 
 .herojumbotron {
@@ -7,7 +7,7 @@ button {
   height: 100vh;
   display: flex;
   align-items: center;
-  border-bottom: 0px;
+  border-bottom: 0rem;
   background-color: transparent;
   font-weight: 400;
   color: #272341;
@@ -65,8 +65,8 @@ button {
   .cta {
     justify-content: center;
   }
-  .cta a {
-    font-size: 1rem;
+  .cta a  {
+    font-size: 1.25rem;
   }
 }
 
@@ -81,8 +81,8 @@ button {
   .herotitle {
     font-size: 2rem;
   }
-  .cta a {
-    font-size: 1rem;
+  .cta a  {
+    font-size: 1.5rem;
   }
 }
 

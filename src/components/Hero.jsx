@@ -53,7 +53,7 @@ const Hero = () => {
         >
           <p className={styles.cta}>
             <button
-              className={`px-4 py-1 text-sm bg-transparent text-color-main cta-btn cta-btn-hero hvr-shutter-out-horizontal`}
+              className={`text-color-main cta-btn cta-btn-hero hvr-shutter-out-horizontal`}
             >
               <Link to="about" smooth duration={1000}>
                 Know more
