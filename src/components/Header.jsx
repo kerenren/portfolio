@@ -2,6 +2,9 @@ import { Link } from "react-scroll"
 import PropTypes from "prop-types"
 import React from "react"
 
+import styles from "../styles/sections/header.module.css"
+import HeaderImg from "./HeaderImg.jsx"
+
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to} smooth duration={1000}>
@@ -12,12 +15,13 @@ const ListLink = props => (
 
 const Header = ({ siteTitle }) => {
   return (
-    <header style={{ marginBottom: `1.5rem` }}>
-      <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h3 style={{ display: `inline` }}>{siteTitle}</h3>
+    <header className={styles.header}>
+      <Link to="hero" className={styles.headerIcon} smooth duration={1000}>
+        <HeaderImg alt={siteTitle}/>
       </Link>
-      <ul style={{ listStyle: `none`, float: `right` }}>
+      <ul classname={styles.navItems}>
         <ListLink to="about">About</ListLink>
+        <ListLink to="projects">Projects</ListLink>
         <ListLink to="contact">Contact</ListLink>
       </ul>
     </header>

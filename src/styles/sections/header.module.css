@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 36px;
+}
+
+.header ul {
+  list-style: none;
+  height: 100%;
+  margin: 0;
+}
+
+.header-icon,
+.header ul {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+margin: 0 16px;
+}
