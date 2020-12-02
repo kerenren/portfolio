@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-.header li:hover {
+.header a:hover {
   cursor: pointer;
 }
 
@@ -20,6 +20,7 @@
 .header ul {
   display: flex;
   align-items: center;
+  padding: 6px 0;
 }
 
 .header-icon {
@@ -34,7 +35,7 @@
 .top-nav {
   position: fixed;
   top: 0px;
-  background: #64485c;
+  background: #83677b;
   z-index: 10000;
   width: 100%;
 }
@@ -58,8 +59,9 @@
   outline: none;
 }
 
-.navbar-nav {
+.mobile-nav-items .navbar-nav {
   margin-top: -40px;
+  width: 80%;
 }
 
 @media (max-width: 576px) {

@@ -60,7 +60,7 @@ const Header = ({ siteTitle }) => {
         </ul>
       </div>
       <div className={styles.mobileNavItems}>
-        <Navbar expand="lg">
+        <Navbar collapseOnSelect expand="lg">
           <Navbar.Toggle aria-controls="moobile-nav-bar-content" />
           <Navbar.Collapse id="moobile-nav-bar-content">
             <Nav className={`mr-auto ${styles.navbarNav}`}>
