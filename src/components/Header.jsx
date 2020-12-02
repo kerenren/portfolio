@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "react-scroll"
 import PropTypes from "prop-types"
 
@@ -49,12 +50,28 @@ const Header = ({ siteTitle }) => {
       <Link to="hero" className={styles.headerIcon} smooth duration={1000}>
         <HeaderImg alt={siteTitle} />
       </Link>
-      <ul classname={styles.navItems}>
-        <ListLink to="hero">Home</ListLink>
-        <ListLink to="about">About</ListLink>
-        <ListLink to="projects">Projects</ListLink>
-        <ListLink to="contact">Contact</ListLink>
-      </ul>
+
+      <div className={styles.laptopNavItems}>
+        <ul>
+          <ListLink to="hero">Home</ListLink>
+          <ListLink to="about">About</ListLink>
+          <ListLink to="projects">Projects</ListLink>
+          <ListLink to="contact">Contact</ListLink>
+        </ul>
+      </div>
+      <div className={styles.mobileNavItems}>
+        <Navbar expand="lg">
+          <Navbar.Toggle aria-controls="moobile-nav-bar-content" />
+          <Navbar.Collapse id="moobile-nav-bar-content">
+            <Nav className={`mr-auto ${styles.navbarNav}`}>
+              <ListLink to="hero">Home</ListLink>
+              <ListLink to="about">About</ListLink>
+              <ListLink to="projects">Projects</ListLink>
+              <ListLink to="contact">Contact</ListLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
     </header>
   )
 }
