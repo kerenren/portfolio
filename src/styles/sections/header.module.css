@@ -3,12 +3,17 @@
   align-items: center;
   justify-content: space-between;
   height: 36px;
+  color: #fff;
 }
 
 .header ul {
   list-style: none;
   height: 100%;
   margin: 0;
+}
+
+.header li:hover {
+  cursor: pointer;
 }
 
 .header-icon,
@@ -18,5 +23,18 @@
 }
 
 .header-icon {
-margin: 0 16px;
+  margin: 0 16px;
+}
+
+.buttom-nav {
+  position: relative;
+  background-color: #83677b;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0px;
+  background: #64485c;
+  z-index: 10000;
+  width: 100%;
 }
