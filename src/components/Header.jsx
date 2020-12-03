@@ -15,13 +15,13 @@ const ListLink = props => (
 )
 
 const Header = ({ siteTitle }) => {
-  const vh = Math.max(
-    document.documentElement.clientHeight || 0,
-    window.innerHeight || 0
-  )
   const [scrollState, setScrollState] = useState("buttom")
 
   const checkScrollTop = () => {
+    const vh = Math.max(
+      document.documentElement.clientHeight || 0,
+      window.innerHeight || 0
+    )
     const scrolled = document.scrollingElement.scrollTop
     if (scrolled >= vh) {
       if (scrollState !== "top") {
