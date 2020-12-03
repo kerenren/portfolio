@@ -1,5 +1,4 @@
 .footer {
-  color: #fff;
   padding: 4.8rem 0;
   text-align: center;
   display: flex;
@@ -7,11 +6,11 @@
   align-items: center;
 }
 
-.backToTop:hover {
+.back-to-top:hover {
   cursor: pointer;
 }
 
-.backTopEmoji {
+.back-top-emoji {
   font-size: 48px;
 }
 
@@ -35,11 +34,15 @@
 
 .footer-text a:hover,
 .footer-text:active {
-  color: #f9b6af;
+  color: white;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
-.networkIcon {
+.network-icon {
   margin: 0 20px;
+}
+
+.network-icon:hover{
+  color: white;
 }

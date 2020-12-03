@@ -42,6 +42,7 @@ const Footer = () => {
         Designed & Developed by Kelly Ren
         <br />© {new Date().getFullYear()}. Powered by{" "}
         <a
+          target="_blank"
           className="text-color-grey bg-color-dark-coco"
           href="https://www.gatsbyjs.com"
         >
