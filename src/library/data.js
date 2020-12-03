@@ -14,7 +14,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
+    img: "project-hogwarts-crm.jpg",
     title: "Hogwarts CRM APP",
     info:
       "an Hogwarts CRM (customer relationship management) full stack app using react and python.",
@@ -36,8 +36,8 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
-    title: "TheTreeWhisperer",
+    img: "project-tree-whisper.jpg",
+    title: "TheTreeWhisper",
     info:
       "a 48 hours Hackathon project which uses React, Python, Flask and AI algorithm to detect if plants are healthy or not from the image recogonition",
     info2:
@@ -47,12 +47,12 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
+    img: "project-react-micro-blogging.jpg",
     title: "React Micro blogging",
     info: "A fully functional micro blogging web app (like twitter)",
     info2:
       "Anim aliqua in veniam est aliqua. Occaecat cillum voluptate in consequat magna incididunt velit. Aliquip incididunt deserunt commodo eu enim ut aliqua veniam excepteur.",
-    url: "./",
+    url: "https://react-micro-blogging-kerenren.web.app/",
     repo: "https://github.com/kerenren/news_portal",
   },
   {
@@ -67,7 +67,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
+    img: "project-todo-app.jpg",
     title: "React event planner app",
     info:
       "An app that will let you add elements to a ‘to do’ list and to move it from that list to a ‘done’. This app was created using React and create-react-app.",
@@ -78,7 +78,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
+    img: "project-fibonacci-calc.jpg",
     title: "Valina JavaScript Fibonacci Project",
     info: "A fibonacci calculator",
     info2:
