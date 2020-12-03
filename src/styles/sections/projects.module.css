@@ -1,0 +1,87 @@
+.projects {
+  margin-bottom: 120px;
+}
+
+.projects .cta-btn {
+  font-size: 16px;
+}
+
+.project-container {
+  margin-bottom: 60px;
+}
+
+.project-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.project-wrapper-text {
+  text-align: left;
+}
+
+.project-wrapper-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #272341;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin: 0;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: row;
+  margin: 18px 0;
+}
+
+.codeIcon {
+  color: #c87d7f;
+  margin: 0 3px;
+}
+
+.project-wrapper-image {
+  margin: 16px auto;
+}
+
+.thumbnail {
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.2s ease-out;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.5s box-shadow,
+    0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+@media (max-width: 576px) {
+  .projects {
+    margin: 0 30px;
+  }
+
+  .row {
+    margin-bottom: 32px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .project-wrapper-text p {
+    font-size: 14px;
+  }
+
+  .projects a {
+    font-size: 12px;
+  }
+
+  .codeIcon {
+    color: #7b263f;
+  }
+
+  .thumbnail {
+    border: 1px solid #d2d2d2;
+    box-shadow: none;
+  }
+}

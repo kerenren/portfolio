@@ -1,0 +1,115 @@
+button {
+  border: 1px solid #7b263f;
+}
+
+.herojumbotron {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background-color: transparent;
+  font-weight: 400;
+  color: #272341;
+  padding: 0px 12.8px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.herotitle {
+  margin-bottom: 51.2px;
+  text-align: left;
+}
+
+.cta {
+  display: flex;
+}
+
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: 2;  
+  transform-origin: 70% 70%;      
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }  
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }  
+100% { transform: rotate( 0.0deg) }
+}
+
+
+/* Extra small devices (landscape phones, 320px and up) */
+@media (min-width: 320px) {
+  #hero {
+    line-height: 1.5;
+  }
+  .herojumbotron {
+    padding: 0px 12.8px;
+  }
+  .herotitle {
+    font-size: 28.8px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .cta {
+    justify-content: center;
+  }
+  .cta a  {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .herojumbotron {
+    line-height: 1.5;
+  }
+  .herojumbotron {
+    padding: 0px 48px;
+  }
+  .herotitle {
+    font-size: 32px;
+  }
+  .cta a  {
+    font-size: 24px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .herotitle {
+    line-height: 1.2;
+    font-size: 40px;
+  }
+  .herojumbotron {
+    padding: 0px 89.6px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .herotitle {
+    font-size: 44.8px;
+    text-align: left;
+  }
+  .cta {
+    justify-content: start;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .herotitle {
+    font-size: 48px;
+  }
+}

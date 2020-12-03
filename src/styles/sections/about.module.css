@@ -1,0 +1,41 @@
+.about {
+  color: white;
+  background-color: firebrick;
+  background-image: linear-gradient(135deg, #7b263f 0%, #f9b6af 100%);
+  height: 100%;
+  border-top: 0px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  padding-bottom: 10%;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.wrapper-image {
+  align-self: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-info {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper-info-text {
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
