@@ -35,7 +35,7 @@ const Projects = () => {
 
           return (
             <Row key={id} className={styles.projectContainer}>
-              <Col lg={4} sm={12}>
+              <Col lg={4} sm={12} className="d-flex align-items-center">
                 <Fade
                   left={isDesktop}
                   bottom={isMobile}
@@ -103,7 +103,7 @@ const Projects = () => {
                           easing: "cubic-bezier(.03,.98,.52,.99)",
                         }}
                       >
-                        <div data-tilt className="thumbnail">
+                        <div data-tilt>
                           <ProjectImg alt={title} filename={img} />
                         </div>
                       </Tilt>
