@@ -1,9 +1,9 @@
-const siteUrl = "https://kellyren.gtsb.io/"
+const siteUrl = "https://kellyren.gtsb.io"
 
 module.exports = {
   siteMetadata: {
     title: `Kelly Ren`,
-    description: `Kelly Ren's portfolio`,
+    description: `Kelly Ren's portfolio web site, built with React, Gatsby, GraphQL, Bootstrap. `,
     author: `@kerenren`,
     image: "/og-image.jpg",
     url: siteUrl,
