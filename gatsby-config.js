@@ -1,9 +1,13 @@
+const siteUrl = "https://kellyren.gtsb.io/"
+
 module.exports = {
   siteMetadata: {
     title: `Kelly Ren`,
     description: `Kelly Ren's portfolio`,
     author: `@kerenren`,
-    image: "/images/og-image.jpg"
+    image: "/og-image.jpg",
+    url: siteUrl,
+    siteUrl,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
