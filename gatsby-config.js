@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Kelei Ren`,
-    description: `Kelei Ren's portfolio`,
+    title: `Kelly Ren`,
+    description: `Kelly Ren's portfolio`,
     author: `@kerenren`,
     image: "/images/og-image.jpg"
   },
