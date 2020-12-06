@@ -6,11 +6,11 @@ export const projectsData = [
     id: nanoid(),
     img: "ProjectTurboKanban.jpg",
     title: "Turbo Kanban",
-    info: "A full stack Web App to monitor realtime bots logs status, ",
-    info2:
-      "",
+    info:
+      "A full stack web app using RESTful API to monitor real time cloud bots logs and presented in a bots dashboard, to retrive logs by bot id, to upload files and modules and to excute sql commands per types by simply selecting options from a user friendly form.",
+    info2: "It's built with React.js, axios, python, flask, MySql database",
     url: "./",
-    repo: "./",
+    repo: "https://github.com/kerenren/Turbo-Kanban",
   },
   {
     id: nanoid(),
@@ -18,8 +18,7 @@ export const projectsData = [
     title: "Hogwarts CRM APP",
     info:
       "an Hogwarts CRM (customer relationship management) full stack app using react and python.",
-    info2:
-      "",
+    info2: "",
     url: "./",
     repo: "https://github.com/kerenren/hogwarts_crm_react",
   },
@@ -40,8 +39,7 @@ export const projectsData = [
     title: "TheTreeWhisper",
     info:
       "a 48 hours Hackathon project which uses React, Python, Flask and AI algorithm to detect if plants are healthy or not from the image recogonition",
-    info2:
-      "uilt with React, Axios, Flask, tensorflow",
+    info2: "uilt with React, Axios, Flask, tensorflow",
     url: "./",
     repo: "https://github.com/kerenren/TheTreeWhisperer",
   },
@@ -50,8 +48,7 @@ export const projectsData = [
     img: "project-react-micro-blogging.jpg",
     title: "React Micro blogging",
     info: "A fully functional micro blogging web app (like twitter)",
-    info2:
-      "Built with React, hosted by Google Firebase",
+    info2: "Built with React, hosted by Google Firebase",
     url: "https://react-micro-blogging-kerenren.web.app/",
     repo: "https://github.com/kerenren/news_portal",
   },
@@ -60,8 +57,7 @@ export const projectsData = [
     img: "ProjectTurboKanban.jpg",
     title: "News Portal",
     info: "News portal which present news feeds from news API and Rss feeds",
-    info2:
-      "Built with React, chakra UI",
+    info2: "Built with React, chakra UI",
     url: "./",
     repo: "https://github.com/kerenren/react-micro-blogging",
   },
@@ -81,8 +77,7 @@ export const projectsData = [
     img: "project-fibonacci-calc.jpg",
     title: "Valina JavaScript Fibonacci Project",
     info: "A fibonacci calculator",
-    info2:
-      "Built with valina Javascript",
+    info2: "Built with valina Javascript",
     url: "./",
     repo: "https://github.com/kerenren/js-project-1-fibonacci",
   },
