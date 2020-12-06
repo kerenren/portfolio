@@ -23,7 +23,7 @@ const IndexPage = () => {
     <PortfolioProvider value={{ projects }}>
       <Hero />
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Portfolio" />
         <About />
         <Projects />
         <Contact />
