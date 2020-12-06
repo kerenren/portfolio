@@ -16,7 +16,7 @@ const HeaderImg = ({alt}) => {
   `)
 
   if (!data?.file?.childImageSharp?.fixed) {
-    return <div>Picture not found</div>
+    return <div> {" "}</div>
   }
 
   return (
