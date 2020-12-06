@@ -27,7 +27,17 @@ const ProjectImg = ({ filename, alt }) => (
       if (!image) return null
 
       const imageFluid = image.node.fluid
-      return <Img alt={alt} fluid={imageFluid} />
+      return (
+        <Img
+          style={{
+            width: "90%",
+            height: "90%",
+            filter: "drop-shadow(10px 10px 5px #ccc)",
+          }}
+          alt={alt}
+          fluid={imageFluid}
+        />
+      )
     }}
   />
 )

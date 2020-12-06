@@ -35,7 +35,7 @@ const Projects = () => {
 
           return (
             <Row key={id} className={styles.projectContainer}>
-              <Col lg={4} sm={12}>
+              <Col lg={4} sm={12} className="d-flex align-items-center">
                 <Fade
                   left={isDesktop}
                   bottom={isMobile}
@@ -48,14 +48,16 @@ const Projects = () => {
                     <p>{info}</p>
                     <p>{info2}</p>
                     <div className={styles.ctaContainer}>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn-hero hvr-shutter-out-horizontal"
-                        href={url || "#!"}
-                      >
-                        See Live
-                      </a>
+                      {url !== "./" && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn-hero hvr-shutter-out-horizontal"
+                          href={url}
+                        >
+                          See Live
+                        </a>
+                      )}
 
                       {repo && (
                         <a
@@ -103,7 +105,7 @@ const Projects = () => {
                           easing: "cubic-bezier(.03,.98,.52,.99)",
                         }}
                       >
-                        <div data-tilt className="thumbnail">
+                        <div data-tilt>
                           <ProjectImg alt={title} filename={img} />
                         </div>
                       </Tilt>

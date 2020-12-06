@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import Fade from "react-reveal/Fade"
 import { Link } from "react-scroll"
 import Container from "react-bootstrap/Container"

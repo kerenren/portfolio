@@ -6,20 +6,19 @@ export const projectsData = [
     id: nanoid(),
     img: "ProjectTurboKanban.jpg",
     title: "Turbo Kanban",
-    info: "A full stack Web App to monitor realtime bots logs status, ",
-    info2:
-      "Ut minim ut ex ea et. Esse irure aute incididunt quis. Eiusmod tempor voluptate fugiat dolor in adipisicing esse ad incididunt ex quis qui. Quis consectetur aute sunt aute labore dolor dolore mollit. Officia occaecat laboris pariatur magna. Nulla reprehenderit pariatur ullamco officia est occaecat exercitation officia.",
+    info:
+      "A full stack web app using RESTful API to monitor real time cloud bots logs and presented in a bots dashboard, to retrive logs by bot id, to upload files and modules and to excute sql commands per types by simply selecting options from a user friendly form.",
+    info2: "It's built with React.js, axios, python, flask, MySql database",
     url: "./",
-    repo: "./",
+    repo: "https://github.com/kerenren/Turbo-Kanban",
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
+    img: "project-hogwarts-crm.jpg",
     title: "Hogwarts CRM APP",
     info:
       "an Hogwarts CRM (customer relationship management) full stack app using react and python.",
-    info2:
-      "Et culpa laborum veniam elit voluptate nulla nostrud eu anim anim esse esse Lorem. Ut elit irure ad est do. Adipisicing Lorem magna do ad eiusmod aute occaecat mollit pariatur do. Lorem excepteur veniam qui laboris. Duis do ullamco fugiat consequat culpa id labore incididunt reprehenderit ea. Occaecat aute ullamco irure in minim anim aliqua duis qui. Ipsum laboris ut nostrud labore aliquip non elit aute magna elit tempor sint ut.",
+    info2: "",
     url: "./",
     repo: "https://github.com/kerenren/hogwarts_crm_react",
   },
@@ -36,23 +35,21 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
-    title: "TheTreeWhisperer",
+    img: "project-tree-whisper.jpg",
+    title: "TheTreeWhisper",
     info:
       "a 48 hours Hackathon project which uses React, Python, Flask and AI algorithm to detect if plants are healthy or not from the image recogonition",
-    info2:
-      "Fugiat do non exercitation dolor nisi excepteur qui ea ea mollit in. Ullamco in do excepteur excepteur ullamco et ullamco fugiat culpa amet laboris culpa. Officia quis qui enim adipisicing ad et nostrud est exercitation. Ea ipsum exercitation Lorem aliqua exercitation ut irure voluptate ad eiusmod labore dolor qui labore. Ea ad est do do ullamco occaecat esse dolore ullamco cupidatat esse ea.",
+    info2: "uilt with React, Axios, Flask, tensorflow",
     url: "./",
     repo: "https://github.com/kerenren/TheTreeWhisperer",
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
+    img: "project-react-micro-blogging.jpg",
     title: "React Micro blogging",
     info: "A fully functional micro blogging web app (like twitter)",
-    info2:
-      "Anim aliqua in veniam est aliqua. Occaecat cillum voluptate in consequat magna incididunt velit. Aliquip incididunt deserunt commodo eu enim ut aliqua veniam excepteur.",
-    url: "./",
+    info2: "Built with React, hosted by Google Firebase",
+    url: "https://react-micro-blogging-kerenren.web.app/",
     repo: "https://github.com/kerenren/news_portal",
   },
   {
@@ -60,14 +57,13 @@ export const projectsData = [
     img: "ProjectTurboKanban.jpg",
     title: "News Portal",
     info: "News portal which present news feeds from news API and Rss feeds",
-    info2:
-      "Commodo dolor do laborum aliqua dolore veniam quis non ipsum tempor tempor. Nisi tempor ex voluptate aute irure magna. Voluptate id nisi incididunt consectetur fugiat ullamco fugiat sunt occaecat. Ullamco proident minim laboris consequat.",
+    info2: "Built with React, chakra UI",
     url: "./",
     repo: "https://github.com/kerenren/react-micro-blogging",
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
+    img: "project-todo-app.jpg",
     title: "React event planner app",
     info:
       "An app that will let you add elements to a ‘to do’ list and to move it from that list to a ‘done’. This app was created using React and create-react-app.",
@@ -78,11 +74,10 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: "ProjectTurboKanban.jpg",
+    img: "project-fibonacci-calc.jpg",
     title: "Valina JavaScript Fibonacci Project",
     info: "A fibonacci calculator",
-    info2:
-      "In mollit sunt Lorem cupidatat consectetur minim labore in magna proident mollit et cillum eu. Occaecat excepteur sint officia aute ex anim occaecat magna tempor consequat labore proident incididunt. Ut adipisicing incididunt duis irure fugiat aliqua ea dolore aute deserunt minim amet deserunt. Culpa eiusmod anim ad ullamco pariatur quis.",
+    info2: "Built with valina Javascript",
     url: "./",
     repo: "https://github.com/kerenren/js-project-1-fibonacci",
   },

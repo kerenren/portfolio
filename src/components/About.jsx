@@ -43,7 +43,7 @@ const About = () => {
               <div className={styles.wrapperInfo}>
                 <p className={styles.wrapperInfoText}>
                   After working in Google as a project lead I discovered my
-                  passion for programming and went for an intensive full stack
+                  passion for programming and trained at an intensive full stack
                   bootcamp at Israel Tech Challenge (ITC) and completed a 3
                   months internship as a full stack developer.
                 </p>
@@ -63,7 +63,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cta-btn hvr-shutter-out-horizontal cta-btn-resume"
-                    href={"./"}
+                    href={"../../../resume.pdf"}
                   >
                     Resume
                   </a>

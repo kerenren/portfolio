@@ -14,6 +14,7 @@ const Footer = () => {
             className={styles.backTopEmoji}
             role="img"
             alt="back to top emoji"
+            aria-label="back to top emoji button"
           >
             ☝️
           </span>
@@ -39,12 +40,13 @@ const Footer = () => {
       </div>
       <hr />
       <p className={`text-color-grey ${styles.footerText}`}>
-        Designed & Developed by Kelly Ren
+        Developed by Kelly Ren
         <br />© {new Date().getFullYear()}. Powered by{" "}
         <a
           target="_blank"
           className="text-color-grey bg-color-dark-coco"
           href="https://www.gatsbyjs.com"
+          rel="noreferrer"
         >
           Gatsby
         </a>
