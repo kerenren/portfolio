@@ -48,14 +48,16 @@ const Projects = () => {
                     <p>{info}</p>
                     <p>{info2}</p>
                     <div className={styles.ctaContainer}>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn-hero hvr-shutter-out-horizontal"
-                        href={url || "#!"}
-                      >
-                        See Live
-                      </a>
+                      {url !== "./" && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn-hero hvr-shutter-out-horizontal"
+                          href={url}
+                        >
+                          See Live
+                        </a>
+                      )}
 
                       {repo && (
                         <a
