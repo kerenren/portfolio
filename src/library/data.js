@@ -25,7 +25,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: "project-stock-exchange.jpg",
-    title: "Valina JavaScript Stock Exchange Web App.",
+    title: "Vanilla JavaScript Stock Exchange Web App.",
     info:
       "A multipage stock exchange data website. Used Vanila Javascript completly to build html per module.",
     info2:
@@ -39,7 +39,7 @@ export const projectsData = [
     title: "TheTreeWhisper",
     info:
       "a 48 hours Hackathon project which uses React, Python, Flask and AI algorithm to detect if plants are healthy or not from the image recogonition",
-    info2: "uilt with React, Axios, Flask, tensorflow",
+    info2: "Built with React, Axios, Flask, tensorflow",
     url: "./",
     repo: "https://github.com/kerenren/TheTreeWhisperer",
   },
@@ -48,7 +48,7 @@ export const projectsData = [
     img: "project-react-micro-blogging.jpg",
     title: "React Micro blogging",
     info: "A fully functional micro blogging web app (like twitter)",
-    info2: "Built with React, hosted by Google Firebase",
+    info2: "Built with React, and hosted by Google Firebase",
     url: "https://react-micro-blogging-kerenren.web.app/",
     repo: "https://github.com/kerenren/news_portal",
   },
@@ -75,11 +75,20 @@ export const projectsData = [
   {
     id: nanoid(),
     img: "project-fibonacci-calc.jpg",
-    title: "Valina JavaScript Fibonacci Project",
+    title: "Vanilla JavaScript Fibonacci Project",
     info: "A fibonacci calculator",
-    info2: "Built with valina Javascript",
+    info2: "Built with vanilla Javascript",
     url: "./",
     repo: "https://github.com/kerenren/js-project-1-fibonacci",
+  },
+  {
+    id: nanoid(),
+    img: "project-portfolio-vanilla.jpg",
+    title: "Vanilla JavaScript Fibonacci Project",
+    info: "A self learning project before starting full stack bootcamp",
+    info2: "Built with HTML, CSS and vanilla Javascript",
+    url: "https://kerenren.github.io/israel_tech_challenge/Documents/GitHub/Ren_Kelei_ITCPrecourse/index.html",
+    repo: "https://github.com/kerenren/israel_tech_challenge",
   },
 ]
 
