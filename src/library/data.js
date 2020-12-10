@@ -17,8 +17,8 @@ export const projectsData = [
     img: "project-hogwarts-crm.jpg",
     title: "Hogwarts CRM APP",
     info:
-      "An Hogwarts CRM (customer relationship management) full stack app using react and python.",
-    info2: "",
+      "An Hogwarts CRM (customer relationship management) full stack app using React, Axios, Python and Flask.",
+    info2: "The CRM uses nivo chart for data visulizaion, and uses MongoDb to store and manipulate the data. ",
     url: "./",
     repo: "https://github.com/kerenren/hogwarts_crm_react",
   },
