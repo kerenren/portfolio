@@ -8,14 +8,6 @@ import PropTypes from "prop-types"
 import styles from "../styles/sections/header.module.css"
 import HeaderImg from "./HeaderImg.jsx"
 
-const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to} smooth duration={1000}>
-      {props.children}
-    </Link>
-  </li>
-)
-
 const Header = ({ siteTitle }) => {
   const [scrollState, setScrollState] = useState("buttom")
   const [isDisplay, setIsDisplay] = useState("none")
@@ -44,6 +36,14 @@ const Header = ({ siteTitle }) => {
       setIsDisplay("none")
     }
   }
+
+  const ListLink = props => (
+    <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+      <Link to={props.to} smooth duration={1000} onClick={onToggle}>
+        {props.children}
+      </Link>
+    </li>
+  )
 
   useEffect(() => {
     document.addEventListener("scroll", checkScrollTop)
