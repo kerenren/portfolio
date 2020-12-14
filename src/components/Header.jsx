@@ -38,8 +38,8 @@ const Header = ({ siteTitle }) => {
   }
 
   const ListLink = props => (
-    <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-      <Link to={props.to} smooth duration={1000} onClick={onToggle}>
+    <li style={{ display: `inline-block` }}>
+      <Link to={props.to} smooth duration={1000} onClick={onToggle} className="hvr-grow-shadow">
         {props.children}
       </Link>
     </li>
@@ -74,7 +74,7 @@ const Header = ({ siteTitle }) => {
         <nav>
           <FontAwesomeIcon
             icon={faBars}
-            className={`text-color-grey fa-2x ${styles.navToggle} hvr-grow-shadow`}
+            className={`text-color-grey fa-2x ${styles.navToggle}`}
             onClick={onToggle}
           />{" "}
           <div
