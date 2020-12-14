@@ -90,12 +90,12 @@ ul:hover {
 
 li a {
   color: white;
+  letter-spacing: 1px;
 }
 
 li a:hover {
   color: white;
   cursor: pointer;
-  font-weight: bolder;
 }
 
 @media (max-width: 576px) {
