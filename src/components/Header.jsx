@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+
 import React, { useState, useEffect } from "react"
-import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "react-scroll"
 import PropTypes from "prop-types"
 
@@ -16,6 +18,7 @@ const ListLink = props => (
 
 const Header = ({ siteTitle }) => {
   const [scrollState, setScrollState] = useState("buttom")
+  const [isDisplay, setIsDisplay] = useState("none")
 
   const checkScrollTop = () => {
     const vh = Math.max(
@@ -31,6 +34,14 @@ const Header = ({ siteTitle }) => {
       if (scrollState !== "buttom") {
         setScrollState("buttom")
       }
+    }
+  }
+
+  const onToggle = () => {
+    if (isDisplay === "none") {
+      setIsDisplay("flex")
+    } else {
+      setIsDisplay("none")
     }
   }
 
@@ -60,17 +71,24 @@ const Header = ({ siteTitle }) => {
         </ul>
       </div>
       <div className={styles.mobileNavItems}>
-        <Navbar collapseOnSelect expand="lg">
-          <Navbar.Toggle aria-controls="moobile-nav-bar-content" />
-          <Navbar.Collapse id="moobile-nav-bar-content">
-            <Nav className={`mr-auto ${styles.navbarNav}`}>
+        <nav>
+          <FontAwesomeIcon
+            icon={faBars}
+            className={`text-color-grey fa-2x ${styles.navToggle} hvr-grow-shadow`}
+            onClick={onToggle}
+          />{" "}
+          <div
+            className={styles.mobileNavCollapse}
+            style={{ display: isDisplay }}
+          >
+            <div className={`mr-auto ${styles.mobileNavbarNav}`}>
               <ListLink to="hero">Home</ListLink>
               <ListLink to="about">About</ListLink>
               <ListLink to="projects">Projects</ListLink>
               <ListLink to="contact">Contact</ListLink>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
   )
