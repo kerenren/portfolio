@@ -1,21 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+
 import React, { useState, useEffect } from "react"
-import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "react-scroll"
 import PropTypes from "prop-types"
 
 import styles from "../styles/sections/header.module.css"
 import HeaderImg from "./HeaderImg.jsx"
 
-const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to} smooth duration={1000}>
-      {props.children}
-    </Link>
-  </li>
-)
-
 const Header = ({ siteTitle }) => {
   const [scrollState, setScrollState] = useState("buttom")
+  const [isDisplay, setIsDisplay] = useState("none")
 
   const checkScrollTop = () => {
     const vh = Math.max(
@@ -33,6 +28,22 @@ const Header = ({ siteTitle }) => {
       }
     }
   }
+
+  const onToggle = () => {
+    if (isDisplay === "none") {
+      setIsDisplay("flex")
+    } else {
+      setIsDisplay("none")
+    }
+  }
+
+  const ListLink = props => (
+    <li style={{ display: `inline-block` }}>
+      <Link to={props.to} smooth duration={1000} onClick={onToggle} className="hvr-grow-shadow">
+        {props.children}
+      </Link>
+    </li>
+  )
 
   useEffect(() => {
     document.addEventListener("scroll", checkScrollTop)
@@ -60,17 +71,24 @@ const Header = ({ siteTitle }) => {
         </ul>
       </div>
       <div className={styles.mobileNavItems}>
-        <Navbar collapseOnSelect expand="lg">
-          <Navbar.Toggle aria-controls="moobile-nav-bar-content" />
-          <Navbar.Collapse id="moobile-nav-bar-content">
-            <Nav className={`mr-auto ${styles.navbarNav}`}>
+        <nav>
+          <FontAwesomeIcon
+            icon={faBars}
+            className={`text-color-grey fa-2x ${styles.navToggle}`}
+            onClick={onToggle}
+          />{" "}
+          <div
+            className={styles.mobileNavCollapse}
+            style={{ display: isDisplay }}
+          >
+            <div className={`mr-auto ${styles.mobileNavbarNav}`}>
               <ListLink to="hero">Home</ListLink>
               <ListLink to="about">About</ListLink>
               <ListLink to="projects">Projects</ListLink>
               <ListLink to="contact">Contact</ListLink>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
   )

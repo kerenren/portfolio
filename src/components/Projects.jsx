@@ -87,7 +87,7 @@ const Projects = () => {
                 >
                   <div className={styles.projectWrapperImage}>
                     <a
-                      href={url || "#!"}
+                      href={(url !== "./" && url) || repo}
                       target="_blank"
                       aria-label="Project Link"
                       rel="noopener noreferrer"

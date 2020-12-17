@@ -1,9 +1,13 @@
+const siteUrl = "https://kellyren.gtsb.io"
+
 module.exports = {
   siteMetadata: {
     title: `Kelly Ren`,
-    description: `Kelly Ren's portfolio`,
+    description: `Kelly Ren's portfolio web site, built with React, Gatsby, GraphQL, Bootstrap. `,
     author: `@kerenren`,
-    image: "/images/og-image.jpg"
+    image: "/og-image.jpg",
+    url: siteUrl,
+    siteUrl,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -44,7 +48,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Montserrat pro\:400,500,600,700`],
+        fonts: [`Montserrat\:400,500,600,700`],
         display: "swap",
       },
     },

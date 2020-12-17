@@ -63,7 +63,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cta-btn hvr-shutter-out-horizontal cta-btn-resume"
-                    href={"../../../resume.pdf"}
+                    href={"../../../Resume_Kelly_Ren_Full_Stack_Developer.pdf"}
                   >
                     Resume
                   </a>
