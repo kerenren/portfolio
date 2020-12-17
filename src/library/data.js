@@ -85,7 +85,7 @@ export const projectsData = [
     id: nanoid(),
     img: "project-portfolio-vanilla.jpg",
     title: "Vanilla JavaScript portfolio",
-    info: "A self learning project before starting my study in Isral Tech Challenge Full Stack Web Development bootcamp.",
+    info: "A self learning project before starting my study in Israel Tech Challenge Full Stack Web Development bootcamp.",
     info2: "Built with HTML, CSS and vanilla Javascript.",
     url: "https://kerenren.github.io/israel_tech_challenge/Documents/GitHub/Ren_Kelei_ITCPrecourse/index.html",
     repo: "https://github.com/kerenren/israel_tech_challenge",
