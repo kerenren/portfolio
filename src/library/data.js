@@ -96,7 +96,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: "project-wix-website.jpg",
-    title: "Wix Website Project",
+    title: "Wix Website Project for laptop",
     info:
       "One of my first projects from Israel Tech Challenge Full Stack Web Development Bootcamp. It's completed within 24 hours.",
     info2: "I was assigned and developed the pixel perfect website page almost as the same as the home page of the official Wix Website by using HTML and CSS without any libraries or frameworks.",
